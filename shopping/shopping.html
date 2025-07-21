@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <P> amazon shipping calculator</P>
+    <P>order under $40 = +$10 shipping.</P>
+    <P> order over $40 = FREE shipping.</P>
+    <input id="input" type="text" placeholder="Cost of order" onkeydown="
+     if(event.key=='Backspace'){
+     result=result.slice(0,-1);
+
+     }else if(Number(event.key)>0||Number(event.key)<=9||event.key>`a`||event.key>`A`||event.key<`z`||event.key<`Z`){ result+=event.key;
+       }
+ document.getElementById(`display`).innerHTML=result;
+    
+      
+   /* if(event.key=='Enter'){
+    calculate();
+    }*/">
+    <button onclick="calculate()">calculator</button>
+    <p id="display"></p>
+    <script>
+        let result = ``
+
+        function calculate() {
+            if (Number(document.getElementById("input").value) <= 0) {
+                document.getElementById("display").innerHTML = `order should be greater than 0`
+            } else if (Number(document.getElementById("input").value) > 40) {
+                document.getElementById("display").innerHTML = "$" + document.getElementById("input").value;
+            } else {
+                document.getElementById("display").innerHTML = "$" + (((Number(document.getElementById("input").value) * 100) / 100) + 10);
+            }
+        }
+    </script>
+</body>
+
+</html>

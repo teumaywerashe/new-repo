@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<div class="input-container">
+    <input id="input-text" onkeydown="
+        if(event.key==`Enter`){
+        update()
+        }" type="text">
+    <button onclick="update()">add</button>
+</div>
+
+<div class="todo-container" id="todolist">
+
+</div>
+
+<body>
+    <script src="todolist.js">
+    </script>
+</body>
+
+</html>

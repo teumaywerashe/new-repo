@@ -1,0 +1,20 @@
+body {
+    background-color: grey;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+#clockDisplay {
+    background-color: hsl(204, 100%, 3%);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10 4px 0px rgba(6, 221, 99, 0.2);
+}

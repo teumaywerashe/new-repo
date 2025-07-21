@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clicked {
+            background: rgb(225, 197, 197);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="k" onclick="
+   test()
+    ">subscribe</button>
+    <script>
+        function test() {
+            if (document.querySelector("button").innerHTML == "subscribe") {
+                document.querySelector("button").innerHTML = "subscribed"
+                document.getElementById("k").classList.add("clicked");
+            } else {
+                document.querySelector("button").innerHTML = "subscribe"
+                document.getElementById("k").classList.remove("clicked");
+            }
+        }
+    </script>

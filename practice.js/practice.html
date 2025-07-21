@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function timeConsuming() {
+            console.log("Start of time-consuming task");
+            for (let i = 0; i < 1e9; i++) {
+                // Simulating a time-consuming task
+            }
+            console.log("End of time-consuming task");
+        }
+
+        function timeConsuming1() {
+            console.log("Start of time-consuming task");
+            setTimeout(() => {
+                console.log("Start of time-consuming task");
+            }, 0);
+            console.log("End of time-consuming task");
+        }
+        timeConsuming();
+        timeConsuming1();
+        timeConsuming();
+    </script>
+</body>
+
+</html>

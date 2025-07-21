@@ -1,0 +1,13 @@
+.input-container,
+.todo-container {
+    display: grid;
+    grid-template-columns: 150px 50px;
+    row-gap: 3px;
+    column-gap: 3px;
+    align-items: center;
+}
+
+#delete-btn {
+    color: red;
+    font-size: 16px;
+}

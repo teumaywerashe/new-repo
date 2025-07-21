@@ -1,0 +1,15 @@
+ #display {
+     font-size: 3em;
+     color: red;
+     text-align: center;
+     font-family: Arial, sans-serif;
+     font-weight: bold;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     background-color: lightblue;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     letter-spacing: 2px;
+     border: 2px solid #ccc;
+     transition: all 0.3s ease-in-out;
+     padding: 20px;
+ }

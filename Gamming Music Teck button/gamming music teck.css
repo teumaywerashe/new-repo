@@ -1,0 +1,20 @@
+  button {
+      font-size: 20px;
+      margin: 2px;
+      padding: 5px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      transform: scale(0.9);
+  }
+  
+  button:active {
+      transform: scale(1.08);
+  }
+  
+  .is-clicked {
+      background: #0e0101;
+      color: white;
+  }

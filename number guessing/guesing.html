@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var min = 5;
+        var max = 10;
+        var count = 0;
+        randomNumber = Math.floor(Math.random() * (max - min) + min)
+        guessNumber = window.prompt(`guess a number between ${min} and ${max}`)
+        while (guessNumber != randomNumber && count < 3) {
+            console.log("you guesssed incorrectly please try  again")
+            guessNumber = window.prompt(`guess a number between ${min} and ${max}`)
+            count++
+        }
+        if (guessNumber == randomNumber) {
+            console.log("you guesssed correctly")
+        } else {
+            console.log("your guessswas incorrect")
+        }
+    </script>
+</body>
+
+</html>

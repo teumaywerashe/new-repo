@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop watch</title>
+</head>
+<style>
+    .con {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+
+<body>
+    <div class="con">
+        <div id="h">00</div>
+        <div>:</div>
+        <div id="m">00</div>
+        <div>:</div>
+        <div id="s">00</div>
+    </div>
+    <div class="buttons">
+        <button>start</button>
+        <button>stop</button>
+        <button>restart</button>
+    </div>
+    <script>
+        let timer = null;
+        let h = 0;
+        let m = 0;
+        let s = 0;
+
+        function start() {
+            if (timer) return;
+            timer = setInterval(() => {
+                s++;
+                if (s === 60) {
+                    s = 0;
+                    m++;
+                }
+                if (m === 60) {
+                    m = 0;
+                    h++;
+
+                }
+                document.getElementById('h').innerText = String(h).padStart(2, '0');
+                document.getElementById('m').innerText = String(m).padStart(2, '0');
+                document.getElementById('s').innerText = String(s).padStart(2, '0');
+
+            }, 1000);
+        }
+
+        function stop() {
+            clearInterval(timer);
+            timer = null;
+
+        }
+
+        function restart() {
+            clearInterval(timer);
+            timer = null;
+            h = 0
+            s = 0
+            m = 0
+            document.getElementById('h').innerText = '00'
+            document.getElementById('m').innerText = '00'
+            document.getElementById('s').innerText = '00'
+        }
+    </script>
+</body>
+
+</html>

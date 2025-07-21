@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.cells {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    border: 1px grey solid;
+    row-gap: 10px;
+    padding: 20px;
+}
+
+.cell {
+    background-color: rgb(234, 230, 230);
+    color: black;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 60px;
+    width: 60px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    transform: scale(.95);
+}
+
+.cell:active {
+    background-color: antiquewhite;
+    transform: scale(1.05);
+}

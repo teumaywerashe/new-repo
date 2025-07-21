@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #timer {
+            display: flex;
+            font-size: 3em;
+        }
+        
+        #buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        button {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="timer">
+        <div contenteditable="true" id="hour">00</div>
+        <div>:</div>
+        <div contenteditable="true" id="minute">00</div>
+        <div>:</div>
+        <div contenteditable="true" id="second">00</div>
+    </div>
+    <div id="buttons">
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+        <button id="reset">reset</button>
+
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+
+</html>
