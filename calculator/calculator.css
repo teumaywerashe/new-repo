@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #2e8e4a, #16d6e0);
+    background: white;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -17,7 +17,7 @@ body {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -10px 20px 20px #0b0b0beb;
 }
 
 button {
@@ -65,6 +65,7 @@ button:active {
     font-weight: bold;
     text-align: center;
     color: #333;
+    box-shadow: -5px 10px 10px rgb(198, 197, 197);
     /* word-wrap: break-word; */
     min-height: 30px;
     min-width: 290px;

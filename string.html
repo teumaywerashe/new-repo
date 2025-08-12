@@ -1,17 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>add</title>
-    <link rel="stylesheet" href="loading.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div id="display"></div>
-    <script src="loading.js"></script>
+    <header>
+        <h1>Teumay Werashe</h1>
+        <p>Web Developer & Learner</p>
+    </header>
 
-    </script>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer learning to build cool web apps. I love coding and creating things with HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Simple Calculator</h3>
+            <p>A calculator built using HTML, CSS, and JS.</p>
+        </div>
+        <div class="project">
+            <h3>To-Do App</h3>
+            <p>A simple to-do list to manage daily tasks.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="thanks-message" style="display:none;">Thanks for your message!</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Teumay Werashe</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

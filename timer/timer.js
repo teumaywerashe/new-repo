@@ -4,7 +4,14 @@ let res = document.getElementById("reset");
 st.addEventListener("click", startTimer);
 sto.addEventListener("click", stopTimer);
 res.addEventListener("click", resetTimer);
-
+document.body.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') startTimer();
+    if (event.key === 's') stopTimer();
+    if (event.key === 'r') resetTimer();
+})
+document.body.addEventListener('click', () => {
+    console.log(countdown)
+})
 let seconds;
 let hours;
 let minutes;
@@ -43,9 +50,11 @@ function startTimer() {
                         seconds = 59;
                         minutes = 59;
                         hours--;
-                    } else alert("Time's up!");
-                    clearInterval(countdown);
-                    return;
+                    } else {
+                        alert("Time's up!");
+                        clearInterval(countdown);
+                        return;
+                    }
                 }
             }
             document.getElementById("timer").innerHTML = (`${String(hours).padStart(2,"0")}:${String(minutes).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`);

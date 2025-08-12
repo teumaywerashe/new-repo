@@ -2,29 +2,46 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolds;
     text-align: center;
-    /* align-self: center; */
-    /* justify-content: center; */
-    /* place-items: center; */
 }
 
 button {
-    border: 1px solid rgb(11, 10, 93);
-    box-shadow: 10px 20px 20px rgb(164, 124, 124) solid;
-    font-size: 16px;
+    border: none;
+    font-size: 26px;
     text-align: center;
     align-self: center;
     justify-content: center;
     place-items: center;
-    background-color: blue;
-    color: aqua;
-    padding: 5px 5px;
-    width: auto;
-    margin: 0px;
+    background-color: grey;
+    color: white;
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+span {
+    font-size: 20px;
+    color: red;
+}
+
+button:hover {
+    border-radius: 20px;
+    transform: scale(0.91);
+    background-color: white;
+    color: black;
+    box-shadow: rgb(9, 229, 42) 3px 0px 3px;
+}
+
+button:active {
+    transform: scale(1.09);
+    background-color: black;
+    color: white;
 }
 
 h1 {
     border: 1px rgb(19, 18, 18) solid;
     display: inline-block;
+    box-shadow: 5px 0px 5px green;
     border-radius: 100px;
     min-width: 100px;
     margin: 10px;

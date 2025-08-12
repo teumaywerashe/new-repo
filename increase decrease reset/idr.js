@@ -15,3 +15,14 @@
      value--;
      document.getElementById("p").innerHTML = value;
  }
+ document.body.addEventListener('keydown', (event) => {
+     if (event.key === '+' || event.key === 'ArrowUp') {
+         increase();
+     } else if (event.key === '-' || event.key === 'ArrowDown') {
+         decrease();
+     } else if (event.key === 'Backspace') {
+         reset();
+     }
+
+
+ })

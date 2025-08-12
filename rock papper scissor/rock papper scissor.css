@@ -70,3 +70,25 @@ div {
     text-align: center;
     place-self: center;
 }
+
+@media (max-width:768px) {
+    .button {
+        font-size: 30px;
+    }
+    .inner-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .confirm {
+        display: flex;
+        flex-direction: column;
+    }
+    #yes-Btn {
+        width: 60px;
+        place-self: center;
+    }
+    #no-Btn {
+        width: 60px;
+        place-self: center;
+    }
+}
