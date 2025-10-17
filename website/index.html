@@ -14,7 +14,7 @@
 
     <nav class="navbar">
         <a href="website.html">home</a>
-        <a href="#about1">About</a>
+        <a action="./about" method="get" href="#about1">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -26,7 +26,7 @@
         <div>
             <h1>Teumay Werashe</h1>
             <p>Web Developer & Learner </p>
-            <a href="cv.pdf" download class="cv-button">Download CV</a>
+            <a href="cv.pdf" class="cv-button">Download CV</a>
         </div>
     </header>
     <!-- Hamburger Icon -->
@@ -139,9 +139,9 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="https://formsubmit.co/teumay21@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
+            <div> <label for="name">your name:</label> <input type="text" name="name" placeholder="Your Name" required /></div>
+            <div><label for="email">your email:</label><input type="email" name="email" placeholder="Your Email" required /></div>
+            <div><label for="message">your message:</label><textarea name="message" placeholder="Your Message" required></textarea></div>
             <button type="submit">Send</button>
 
             <!-- Anti-spam & redirection (optional) -->
