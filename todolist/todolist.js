@@ -1,10 +1,10 @@
  let todolist = [];
+
  if (todolist.length === 0) {
      document.getElementById('container').style.display = "none";
  }
 
  function add() {
-
      let name = document.getElementById('input-text').value
      document.getElementById('input-text').value = '';
      let dueDate = document.getElementById('input-date').value;
@@ -14,6 +14,7 @@
          alert("fill the required field")
      } else {
          todolist.push({ name, dueDate })
+         localStorage.setItem('toDo', todolist)
          display();
      }
  }

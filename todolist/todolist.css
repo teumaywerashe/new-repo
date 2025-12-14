@@ -10,13 +10,13 @@ body {
 .div-grid,
 .div-input-grid {
     background-color: grey;
-    box-shadow: rgb(14, 0, 0) 10px 0px 10px;
+    /* box-shadow: rgb(14, 0, 0) 10px 0px 10px; */
 }
 
 .div-grid,
 .div-input-grid {
     display: grid;
-    grid-template-columns: 200px 100px 50px;
+    grid-template-columns: 400px 100px 100px;
     column-gap: 10px;
     color: white;
     row-gap: 10px;
@@ -34,7 +34,9 @@ body {
     word-wrap: wrap;
     overflow: hidden;
     font-size: 16px;
-    width: 100px;
+    padding: 5px 10px;
+    /* width: auto; */
+    outline: none;
     overflow: hidden;
     word-break: break-all;
 }
@@ -47,7 +49,10 @@ p {
 
 #input-date {
     font-size: 16px;
+    padding: 5px 5px;
+    /* width: 300px; */
     width: 100%;
+    cursor: pointer;
 }
 
 .add-button {

@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to do list</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="todolist.css">
 </head>
 
 <body>
+    <h1>Todo List</h1>
     <div class="div-input-grid">
-        <input id="input-text" placeholder="ToDo name" type="text" onkeydown="
+
+        <input id="input-text" placeholder="ToDo title" type="text" onkeydown="
         if(event.key==`Enter`)add()">
         <input id="input-date" onkeydown="
         if(event.key==`Enter`)add()" type="date">
         <button class="add-button" onclick="add()">Add</button>
     </div>
 
-    <div class="div-grid" id="container"></div>
+    <div class="div-grid" id="container">
+    </div>
     <script src="todolist.js">
     </script>
 </body>
